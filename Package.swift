@@ -58,7 +58,7 @@ let package = Package(
 		.target(
 			name: "libunxip",
 			dependencies: dependencies,
-			swiftSettings: [.define("LIBUNXIP")]
+			swiftSettings: [.define("LIBUNXIP"), .swiftLanguageMode(.v5)]
 		),
 	] + systemLibraries
 )
