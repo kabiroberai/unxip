@@ -28,6 +28,7 @@ let systemLibraries: [Target] = [
 	),
 	.systemLibrary(
 		name: "lzma",
+		pkgConfig: "liblzma",
 		providers: [
 			.aptItem(["liblzma-dev"])
 		]
