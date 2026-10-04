@@ -38,6 +38,7 @@ let package = Package(
 	products: [
 		.executable(name: "unxip", targets: ["unxip"]),
 		.library(name: "libunxip", targets: ["libunxip"]),
+		.library(name: "libunxipDynamic", type: .dynamic, targets: ["libunxip"])
 	],
 	targets: [
 		.executableTarget(
